@@ -88,6 +88,8 @@ mkdir -p out/Headless && \
   echo 'is_component_build = false' >> out/Headless/args.gn && \
   echo 'remove_webcore_debug_symbols = true' >> out/Headless/args.gn && \
   echo 'enable_nacl = false' >> out/Headless/args.gn && \
+  echo 'ffmpeg_branding = "Chrome"' >> out/Headless/args.gn && \
+  echo 'proprietary_codecs = true' >> out/Headless/args.gn && \
   gn gen out/Headless
 
 # build chromium headless shell
